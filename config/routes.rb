@@ -1,5 +1,5 @@
 Audits1984::Engine.routes.draw do
-  resources :sessions, only: %i[ index show ] do
+  resources :sessions, as: :console_sessions, only: %i[ index show ] do
     resources :audits, only: %i[ create update ]
   end
 

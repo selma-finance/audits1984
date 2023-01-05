@@ -1,7 +1,7 @@
 require_dependency "audits1984/application_controller"
 
 module Audits1984
-  class SessionsController < ApplicationController
+  class SessionsController < Audits1984::ApplicationController
     include FilteredSessionsScoped
 
     def index

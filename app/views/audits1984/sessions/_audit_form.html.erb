@@ -4,7 +4,7 @@
   </p>
 
   <div class="panel-block">
-    <%= form_with model: [session, audit], authenticity_token: true do |form| %>
+    <%= form_with model: [:console, session, audit], authenticity_token: true do |form| %>
       <div class="field">
         <div class="control is-fullwidth">
           <%= form.label :from_date, "Notes" %>
